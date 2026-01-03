@@ -34,14 +34,13 @@
 
         nextSet.forEach(p => {
             const article = document.createElement('article');
-            // Construct path based on current location
-            // Since this script runs on index.html (root), relative paths in content.json work.
+            const cleanUrl = p.url.replace(/index\.html$/, '');
             article.innerHTML = `
-                <a href="${p.url}" class="image"><img src="${p.image}" alt="" /></a>
+                <a href="${cleanUrl}" class="image"><img src="${p.image}" alt="" /></a>
                 <h3>${p.title}</h3>
                 <p>${p.summary}</p>
                 <ul class="actions">
-                    <li><a href="${p.url}" class="button">More</a></li>
+                    <li><a href="${cleanUrl}" class="button">More</a></li>
                 </ul>
             `;
             container.appendChild(article);
