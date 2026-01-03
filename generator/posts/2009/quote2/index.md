@@ -1,0 +1,10 @@
+---
+date: 2009-12-20
+categories: 
+  - "citacoesquotes"
+  - "portugues"
+---
+
+"As boas perguntas excedem as respostas fáceis"
+
+_Paul Samuelson (1915-2009)_
