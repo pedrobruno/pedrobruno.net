@@ -122,9 +122,15 @@ class MarkdownConverter:
         # Extract summary
         summary_text = re.sub(r'<[^>]+>', '', body_html)
         summary_text = re.sub(r'\s+', ' ', summary_text).strip()
-        dot_idx = summary_text.find('.')
-        summary = summary_text[:dot_idx + 1] if dot_idx != -1 else summary_text[:100]
-        if dot_idx == -1 and len(summary_text) > 100: summary += "..."
+        
+        # Find first stop symbol that is not part of an ellipsis
+        match = re.search(r'(?:(?<!\.)\.(?!\.)|[!?;])', summary_text)
+        if match:
+            stop_idx = match.start()
+            summary = summary_text[:stop_idx + 1]
+        else:
+            summary = summary_text[:100]
+            if len(summary_text) > 100: summary += "..."
             
         return {
             'title': title, 'subtitle': subtitle, 'body': body_html,
@@ -201,7 +207,11 @@ class SiteGenerator:
                 parts = MarkdownConverter.convert(content)
                 
                 slug = 'index.html' if file.lower() == 'index.md' else f"{file[:-3]}.html"
-                target_rel_url = f"content/{rel_path}/{slug}".replace('\\', '/')
+                if slug == 'index.html':
+                    target_rel_url = f"content/{rel_path}/" if rel_path != '.' else "content/"
+                else:
+                    target_rel_url = f"content/{rel_path}/{slug}"
+                target_rel_url = target_rel_url.replace('\\', '/').replace('//', '/')
                 
                 self.all_posts.append(Post(
                     source_path=source_path, rel_path=rel_path, filename=file,
@@ -216,7 +226,7 @@ class SiteGenerator:
     def resolve_img_url(self, post: Post) -> str:
         if not post.first_image or post.first_image.startswith(('http', 'https', '/')):
             return post.first_image
-        return str(Path(post.target_rel_url).parent / post.first_image).replace('\\', '/')
+        return str(Path('content') / post.rel_path / post.first_image).replace('\\', '/')
 
     def build_post_grid(self, posts: List[Post], link_prefix: str = "") -> str:
         grid_html = ""
@@ -339,7 +349,7 @@ class SiteGenerator:
 
         # Content Index Page
         sorted_years = sorted(by_year.keys(), reverse=True)
-        links = '\n'.join([f'<li><a href="{y}/index.html">{y}</a> <small>({len(by_year[y])} post{"s" if len(by_year[y])!=1 else ""})</small></li>' for y in sorted_years])
+        links = '\n'.join([f'<li><a href="{y}/">{y}</a> <small>({len(by_year[y])} post{"s" if len(by_year[y])!=1 else ""})</small></li>' for y in sorted_years])
         archive_html = f'<section><header class="major"><h2>Archive by Year</h2></header><ul>{links}</ul></section>'
         
         final_idx = fix_relative_paths(self.layout_raw.replace('<content />', archive_html), "../")
