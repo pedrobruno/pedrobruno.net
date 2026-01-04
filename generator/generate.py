@@ -164,8 +164,8 @@ class SiteGenerator:
             js_replacement = '<script src="assets/js/site.min.js"></script>'
             css_replacement = '<link rel="stylesheet" href="assets/css/main.min.css" />'
             
-            # Pattern for the three JS files
-            js_pattern = r'<script src="assets/js/util\.js"></script>\s*<script src="assets/js/main\.js"></script>\s*<script src="assets/js/load-more\.js"></script>'
+            # Pattern for the JS files
+            js_pattern = r'<script src="assets/js/util\.js"></script>\s*<script src="assets/js/main\.js"></script>\s*<script src="assets/js/load-more\.js"></script>\s*<script src="assets/js/search\.js"></script>'
             self.layout_raw = re.sub(js_pattern, js_replacement, self.layout_raw)
             
             # Pattern for CSS
@@ -374,7 +374,7 @@ class SiteGenerator:
             return
 
         base_path = self.site_dir / 'assets' / 'js'
-        files = ['util.js', 'main.js', 'load-more.js'] # Order matters for dependencies
+        files = ['util.js', 'main.js', 'load-more.js', 'search.js'] # Order matters for dependencies
         output_file = base_path / 'site.min.js'
 
         print("Concatenating and minifying JS files (publish mode)...")

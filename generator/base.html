@@ -28,6 +28,14 @@
 					<br />
 					Technology + Art + Life
 				</header>
+				<div id="search-bar" style="width: 30%; margin: 0.5em 0 0 0; position: relative;">
+					<form method="post" action="#" onsubmit="return false;">
+						<input type="text" id="search-input" placeholder="Search"
+							style="padding-left: 2.5em; width: 100%;" />
+						<span class="icon solid fa-search"
+							style="position: absolute; left: 0.75em; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5;"></span>
+					</form>
+				</div>
 
 				<content />
 
@@ -52,6 +60,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/load-more.js"></script>
+	<script src="assets/js/search.js"></script>
 
 </body>
 

@@ -3116,12 +3116,13 @@ button:disabled,
 }
 
 #main>.inner>section {
-  padding: 6em 0 4em 0;
+  padding: 2em 0 4em 0;
   border-top: solid 2px rgba(255, 255, 255, 0.2);
 }
 
 #main>.inner>section:first-of-type {
   border-top: 0 !important;
+  padding-top: 2em;
 }
 
 @media screen and (max-width: 1680px) {
@@ -3140,7 +3141,7 @@ button:disabled,
   }
 
   #main>.inner>section {
-    padding: 4em 0 2em 0;
+    padding: 2em 0 2em 0;
   }
 }
 
@@ -3472,7 +3473,7 @@ button:disabled,
 
 /* Banner */
 #banner {
-  padding: 6em 0 4em 0;
+  padding: 2em 0 4em 0;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
