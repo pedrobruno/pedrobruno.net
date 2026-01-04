@@ -38,7 +38,7 @@ Here's a rundown of the work:
 1. Export the entire content of the "old" Wordpress site to XML.
 1. Use [wordpress-export-to-markdown](https://github.com/lonekorean/wordpress-export-to-markdown) to do a generic conversion of the XML content into Markdown files.
 1. Manually revise each one of the markdown files(!)
-1. Select the base for the new site HTML template: ("Editorial" by HTML5 UP)[https://html5up.net/editorial]
+1. Select the base for the new site HTML template: ["Editorial" by HTML5 UP](https://html5up.net/editorial)
 1. Use [Google Antigravity](https://antigravity.google) to make changes to the base HTML template. Model: Gemini 3 Flash.
 1. Iterate with Antigravity to develop a Python script that converts all the markdown files into the corresponding HTML following the given template.
 1. Use Antigravity to create a Windows script to FTP all the files to the webhost.
