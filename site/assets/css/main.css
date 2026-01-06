@@ -3601,6 +3601,22 @@ button:disabled,
   color: #B8FF8C;
 }
 
+#menu ul a.selected-category:before {
+  content: '\f00c';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 0.5em;
+  color: #B8FF8C;
+}
+
 #menu ul a.opener,
 #menu ul span.opener {
   -moz-transition: color 0.2s ease-in-out;

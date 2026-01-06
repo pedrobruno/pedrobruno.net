@@ -1,7 +1,6 @@
 ---
 date: 2010-06-03
 categories: 
-  - "english"
   - "ted"
 ---
 

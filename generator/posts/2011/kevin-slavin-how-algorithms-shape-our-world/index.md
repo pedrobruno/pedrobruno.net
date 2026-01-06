@@ -1,9 +1,8 @@
 ---
 date: 2011-07-27
 categories: 
-  - "business"
-  - "english"
   - "ted"
+  - "ai" 
 ---
 
 # How algorithms shape our world

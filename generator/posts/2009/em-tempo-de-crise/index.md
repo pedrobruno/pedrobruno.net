@@ -1,10 +1,8 @@
 ---
 date: 2009-07-23
 categories: 
-  - "diversosmiscellanious"
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Em tempo de crise .....

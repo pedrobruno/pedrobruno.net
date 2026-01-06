@@ -1,9 +1,8 @@
 ---
 date: 2010-08-06
 categories: 
-  - "english"
   - "life"
-  - "portugues"
+  - "pt"
   - "ted"
 ---
 

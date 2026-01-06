@@ -1,10 +1,8 @@
 ---
 date: 2009-07-18
 categories: 
-  - "cantigassongs"
-  - "diversosmiscellanious"
-  - "life"
-  - "portugues"
+  - "song"
+  - "pt"
 ---
 
 # Uma homenagem à Avó Capitó que ainda hoje a canta

@@ -1,8 +1,8 @@
 ---
 date: 2009-12-20
 categories: 
-  - "citacoesquotes"
-  - "portugues"
+  - "quotes"
+  - "pt"
 ---
 
 "As boas perguntas excedem as respostas fáceis"

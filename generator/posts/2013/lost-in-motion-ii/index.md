@@ -1,5 +1,7 @@
 ---
 date: 2013-12-05
+categories: 
+  - "art"
 ---
 
 # Lost In Motion II

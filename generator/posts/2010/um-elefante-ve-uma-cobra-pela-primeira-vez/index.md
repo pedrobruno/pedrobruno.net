@@ -1,8 +1,8 @@
 ---
 date: 2010-04-24
 categories: 
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Um elefante vê uma cobra pela primeira vez ...

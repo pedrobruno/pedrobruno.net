@@ -1,9 +1,7 @@
 ---
 date: 2017-01-02
 categories: 
-  - "business"
-  - "english"
-  - "life"
+  - "lead"
 ---
 
 # Millennials in the Workplace (from Inside Quest)"

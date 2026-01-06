@@ -1,10 +1,9 @@
 ---
 date: 2009-09-14
 categories: 
-  - "cantigassongs"
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "song"
+  - "joke"
+  - "pt"
 ---
 
 # Bando de Piratas Portugueses

@@ -1,8 +1,7 @@
 ---
 date: 2016-01-10
 categories: 
-  - "english"
-  - "technical"
+  - "tech"
   - "ted"
 ---
 

@@ -1,9 +1,7 @@
 ---
 date: 2014-05-11
 categories: 
-  - "english"
-  - "life"
-  - "technical"
+  - "tech"
   - "ted"
 ---
 

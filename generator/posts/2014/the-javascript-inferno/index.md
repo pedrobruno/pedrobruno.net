@@ -1,9 +1,7 @@
 ---
 date: 2014-06-21
 categories: 
-  - "development"
-  - "english"
-  - "technical"
+  - "tech"
 ---
 
 # The JavaScript Inferno

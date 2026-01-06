@@ -1,9 +1,7 @@
 ---
 date: 2016-02-28
 categories: 
-  - "english"
-  - "portugues"
-  - "technical"
+  - "tech"
 ---
 
 # Boston Dynamics' Atlas Robot

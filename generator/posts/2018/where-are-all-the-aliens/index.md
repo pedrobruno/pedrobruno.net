@@ -1,7 +1,6 @@
 ---
 date: 2018-07-22
 categories: 
-  - "english"
   - "life"
   - "ted"
 ---

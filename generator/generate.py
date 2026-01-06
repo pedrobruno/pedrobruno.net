@@ -19,6 +19,7 @@ class Post:
     first_image: str
     summary: str
     target_rel_url: str
+    categories: List[str]
 
 class MarkdownConverter:
     @staticmethod
@@ -28,10 +29,26 @@ class MarkdownConverter:
         fm_match = re.match(r'^---\s*\n(.*?)\n---\s*\n', md_content, flags=re.DOTALL)
         if fm_match:
             fm_text = fm_match.group(1)
+            current_key = None
             for fm_line in fm_text.split('\n'):
-                if ':' in fm_line:
+                striped_line = fm_line.strip()
+                if not striped_line: continue
+                
+                if ':' in fm_line and not striped_line.startswith('-'):
                     key, val = fm_line.split(':', 1)
-                    frontmatter[key.strip()] = val.strip()
+                    current_key = key.strip()
+                    val = val.strip()
+                    if val:
+                        frontmatter[current_key] = val.strip('"\'')
+                    else:
+                        frontmatter[current_key] = []
+                elif striped_line.startswith('-') and current_key:
+                    val = striped_line[1:].strip().strip('"\'')
+                    if isinstance(frontmatter[current_key], list):
+                        frontmatter[current_key].append(val)
+                    else:
+                        # Convert to list if it was a single value before
+                        frontmatter[current_key] = [frontmatter[current_key], val]
         
         # Remove frontmatter for body processing
         body_md = re.sub(r'^---\s*\n.*?\n---\s*\n', '', md_content, flags=re.DOTALL)
@@ -132,9 +149,14 @@ class MarkdownConverter:
             summary = summary_text[:100]
             if len(summary_text) > 100: summary += "..."
             
+        # Normalize categories
+        cats = frontmatter.get('categories', [])
+        if isinstance(cats, str): cats = [cats]
+            
         return {
             'title': title, 'subtitle': subtitle, 'body': body_html,
-            'date': frontmatter.get('date', ''), 'first_image': first_image, 'summary': summary
+            'date': frontmatter.get('date', ''), 'first_image': first_image, 'summary': summary,
+            'categories': cats
         }
 
 def fix_relative_paths(html: str, prefix: str) -> str:
@@ -165,12 +187,15 @@ class SiteGenerator:
             css_replacement = '<link rel="stylesheet" href="assets/css/main.min.css" />'
             
             # Pattern for the JS files
-            js_pattern = r'<script src="assets/js/util\.js"></script>\s*<script src="assets/js/main\.js"></script>\s*<script src="assets/js/load-more\.js"></script>\s*<script src="assets/js/search\.js"></script>'
+            js_pattern = r'<script src="assets/js/util\.js"></script>\s*<script src="assets/js/main\.js"></script>\s*<script src="assets/js/load-more\.js"></script>\s*<script src="assets/js/search\.js"></script>\s*<script src="assets/js/categories\.js"></script>'
             self.layout_raw = re.sub(js_pattern, js_replacement, self.layout_raw)
             
             # Pattern for CSS
             css_pattern = r'<link rel="stylesheet" href="assets/css/main\.css" />'
             self.layout_raw = re.sub(css_pattern, css_replacement, self.layout_raw)
+
+            # Swap content.json for content.min.json in any scripts
+            self.layout_raw = self.layout_raw.replace('content.json', 'content.min.json')
         
         with open('base_item.html', 'r', encoding='utf-8') as f:
             item_raw = f.read()
@@ -218,7 +243,8 @@ class SiteGenerator:
                     title=parts['title'] or "Untitled", subtitle=parts['subtitle'],
                     body=parts['body'], date=parts['date'],
                     first_image=parts['first_image'], summary=parts['summary'],
-                    target_rel_url=target_rel_url
+                    target_rel_url=target_rel_url,
+                    categories=parts['categories']
                 ))
         
         self.all_posts.sort(key=lambda x: x.date, reverse=True)
@@ -312,14 +338,36 @@ class SiteGenerator:
         with open(self.site_dir / 'index.html', 'w', encoding='utf-8') as f:
             f.write(final_html)
 
-    def generate_json(self):
-        print("Generating content.json...")
+    def generate_json(self, publish=False):
+        print("Generating content JSON...")
+        
+        # Build category map
+        categories = []
+        cat_to_idx = {}
+        for p in self.all_posts:
+            for cat in p.categories:
+                if cat not in cat_to_idx:
+                    cat_to_idx[cat] = len(categories)
+                    categories.append(cat)
+        
         items = [{
             'title': p.title, 'subtitle': p.subtitle, 'date': p.date,
-            'summary': p.summary, 'url': p.target_rel_url, 'image': self.resolve_img_url(p)
+            'summary': p.summary, 'url': p.target_rel_url, 'image': self.resolve_img_url(p),
+            'cats': [cat_to_idx[cat] for cat in p.categories]
         } for p in self.all_posts]
-        with open(self.site_dir / 'content.json', 'w', encoding='utf-8') as f:
-            json.dump(items, f, indent=4, ensure_ascii=False)
+        
+        data = {
+            'categories': categories,
+            'posts': items
+        }
+        
+        filename = 'content.min.json' if publish else 'content.json'
+        with open(self.site_dir / filename, 'w', encoding='utf-8') as f:
+            if publish:
+                json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+            else:
+                json.dump(data, f, indent=4, ensure_ascii=False)
+        print(f"Created {filename}")
 
     def generate_archive(self):
         print("Generating archive pages...")
@@ -374,7 +422,7 @@ class SiteGenerator:
             return
 
         base_path = self.site_dir / 'assets' / 'js'
-        files = ['util.js', 'main.js', 'load-more.js', 'search.js'] # Order matters for dependencies
+        files = ['util.js', 'main.js', 'load-more.js', 'search.js', 'categories.js'] # Order matters for dependencies
         output_file = base_path / 'site.min.js'
 
         print("Concatenating and minifying JS files (publish mode)...")
@@ -389,6 +437,7 @@ class SiteGenerator:
                 print(f" - Warning: {f_name} not found at {f_path}")
 
         if combined:
+            combined = combined.replace('content.json', 'content.min.json')
             minified = jsmin(combined)
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(minified)
@@ -420,7 +469,7 @@ class SiteGenerator:
         self.scan_posts()
         self.generate_posts()
         self.generate_homepage()
-        self.generate_json()
+        self.generate_json(publish=publish)
         self.generate_archive()
         self.copy_assets()
         

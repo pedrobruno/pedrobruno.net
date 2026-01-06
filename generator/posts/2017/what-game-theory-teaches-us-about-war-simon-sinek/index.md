@@ -1,7 +1,7 @@
 ---
 date: 2017-08-10
 categories: 
-  - "life"
+  - "lead"
   - "ted"
 ---
 

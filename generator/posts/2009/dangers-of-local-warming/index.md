@@ -1,9 +1,7 @@
 ---
 date: 2009-08-02
 categories: 
-  - "english"
-  - "life"
-  - "piadajoke"
+  - "joke"
   - "ted"
 ---
 

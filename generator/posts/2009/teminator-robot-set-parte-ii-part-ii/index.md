@@ -1,9 +1,8 @@
 ---
 date: 2009-08-30
 categories: 
-  - "english"
-  - "portugues"
-  - "technical"
+  - "ai"
+  - "tech"
 ---
 
 # LEGO Mindstorms Sudoku Solver

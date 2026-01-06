@@ -1,8 +1,7 @@
 ---
 date: 2009-02-16
 categories: 
-  - "diversosmiscellanious"
-  - "life"
+  - "joke"
 ---
 
 # No Comments ...

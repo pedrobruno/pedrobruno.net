@@ -1,8 +1,8 @@
 ---
 date: 2011-03-06
 categories: 
-  - "artigosarticles"
-  - "technical"
+  - "tech"
+  - "ai"
 ---
 
 # Engineering Intelligence: Why IBM's Jeopardy-Playing Computer Is So Important

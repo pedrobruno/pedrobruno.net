@@ -1,9 +1,8 @@
 ---
 date: 2009-08-20
 categories: 
-  - "cantigassongs"
-  - "life"
-  - "portugues"
+  - "song"
+  - "pt"
 ---
 
 # Procissão

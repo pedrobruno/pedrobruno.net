@@ -1,9 +1,7 @@
 ---
 date: 2014-04-11
 categories: 
-  - "development"
-  - "english"
-  - "technical"
+  - "tech"
 ---
 
 # Happy birthday B.A.S.I.C.

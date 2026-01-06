@@ -2,8 +2,8 @@
 date: 2010-08-09
 categories: 
   - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Aniversário de Casamento

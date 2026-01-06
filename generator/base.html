@@ -28,16 +28,59 @@
 					<br />
 					Technology + Art + Life
 				</header>
-				<div id="search-bar" style="width: 30%; margin: 0.5em 0 0 0; position: relative;">
-					<form method="post" action="#" onsubmit="return false;">
-						<input type="text" id="search-input" placeholder="Search"
-							style="padding-left: 2.5em; width: 100%;" />
-						<span class="icon solid fa-search"
-							style="position: absolute; left: 0.75em; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5;"></span>
-					</form>
-				</div>
 
 				<content />
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Search -->
+				<section id="search" class="alt">
+					<form method="post" action="#" onsubmit="return false;">
+						<input type="text" id="search-input" placeholder="Search" />
+					</form>
+				</section>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Categories</h2>
+					</header>
+					<ul>
+						<li><a href="#" data-category="ai">AI</a></li>
+						<li><a href="#" data-category="joke">Jokes</a></li>
+						<li><a href="#" data-category="lead">Leadership</a></li>
+						<li><a href="#" data-category="life">Life</a></li>
+						<li><a href="#" data-category="me">Me</a></li>
+						<li><a href="#" data-category="pt">Português</a></li>
+						<li><a href="#" data-category="quotes">Quotes</a></li>
+						<li><a href="#" data-category="song">Songs</a></li>
+						<li><a href="#" data-category="tech">Tech</a></li>
+						<li><a href="#" data-category="ted">TED</a></li>
+					</ul>
+					<div>
+						<br />
+						<a href="#" id="show-categories-btn" class="button">Show</a>
+					</div>
+				</nav>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Contacts</h2>
+					</header>
+					<ul class="contact">
+						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/apbruno/"
+								target="_blank">LinkedIn</a>
+						</li>
+						<li class="icon brands fa-github"><a href="https://github.com/pedrobruno"
+								target="_blank">GitHub</a></li>
+					</ul>
+				</section>
 
 				<!-- Footer -->
 				<section>
@@ -45,12 +88,15 @@
 						<p class="copyright">&copy; All rights reserved.
 							<br />
 							Design template based on work by: <a href="https://html5up.net" target="_blank">HTML5
-								UP</a>. Using <strong>Calibri</strong> font ... on purpose.
+								UP</a>.</br>
+							Using <strong>Calibri</strong> font ... on purpose.
 						</p>
 					</footer>
 				</section>
+
 			</div>
 		</div>
+
 	</div>
 
 	<!-- Scripts -->
@@ -61,6 +107,7 @@
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/load-more.js"></script>
 	<script src="assets/js/search.js"></script>
+	<script src="assets/js/categories.js"></script>
 
 </body>
 

@@ -1,9 +1,7 @@
 ---
 date: 2014-05-29
 categories: 
-  - "diversosmiscellanious"
-  - "english"
-  - "technical"
+  - "tech"
 ---
 
 # Monochroma

@@ -1,9 +1,7 @@
 ---
 date: 2014-06-25
 categories: 
-  - "development"
-  - "english"
-  - "technical"
+  - "tech"
 ---
 
 # Pitfall Classic Postmortem With David Crane Panel at GDC 2011

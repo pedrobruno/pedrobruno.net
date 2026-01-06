@@ -1,9 +1,8 @@
 ---
 date: 2009-04-14
 categories: 
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Vidas ...

@@ -1,9 +1,8 @@
 ---
 date: 2009-08-30
 categories: 
-  - "diversosmiscellanious"
-  - "english"
-  - "piadajoke"
+  - "joke"
+  - "song"
 ---
 
 # Ooh Girl - Honest R&B Song

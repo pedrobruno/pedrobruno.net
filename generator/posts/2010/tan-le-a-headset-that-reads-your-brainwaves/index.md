@@ -1,10 +1,9 @@
 ---
 date: 2010-08-06
 categories: 
-  - "diversosmiscellanious"
-  - "english"
   - "life"
   - "ted"
+  - "tech"
 ---
 
 # A headset that reads your brainwaves

@@ -1,8 +1,8 @@
 ---
 date: 2014-12-21
 categories: 
-  - "life"
   - "ted"
+  - "ai"
 ---
 
 # The wonderful and terrifying implications of computers that can learn

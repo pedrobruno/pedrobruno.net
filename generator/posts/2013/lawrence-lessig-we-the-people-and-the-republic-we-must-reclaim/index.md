@@ -1,9 +1,8 @@
 ---
 date: 2013-04-07
 categories: 
-  - "business"
-  - "english"
   - "ted"
+  - "life"
 ---
 
 # We the People, and the Republic we must reclaim

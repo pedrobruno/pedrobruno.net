@@ -1,8 +1,8 @@
 ---
 date: 2011-01-10
 categories: 
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Noite de Núpcias

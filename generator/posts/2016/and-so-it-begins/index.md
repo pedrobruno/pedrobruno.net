@@ -1,9 +1,8 @@
 ---
 date: 2016-05-16
 categories: 
-  - "artigosarticles"
-  - "english"
-  - "technical"
+  - "tech"
+  - "ai"
 ---
 
 # And so it begins ...

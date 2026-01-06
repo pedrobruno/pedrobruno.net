@@ -1,9 +1,8 @@
 ---
 date: 2009-11-26
 categories: 
-  - "english"
   - "life"
-  - "portugues"
+  - "art"
 ---
 
 # Beyoncé Promotion - BIG Style!

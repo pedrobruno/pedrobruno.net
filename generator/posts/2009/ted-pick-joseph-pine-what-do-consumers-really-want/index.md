@@ -1,8 +1,8 @@
 ---
 date: 2009-03-30
 categories: 
-  - "english"
   - "ted"
+  - "life"
 ---
 
 # What do consumers really want?

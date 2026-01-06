@@ -1,9 +1,8 @@
 ---
 date: 2016-07-10
 categories: 
-  - "business"
-  - "english"
   - "ted"
+  - "life"  
 ---
 
 # Why Brexit happened — and what to do next

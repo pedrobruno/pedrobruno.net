@@ -1,10 +1,9 @@
 ---
 date: 2010-11-29
 categories: 
-  - "diversosmiscellanious"
   - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Uma Freira a caminho do Convento ...

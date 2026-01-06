@@ -1,8 +1,8 @@
 ---
 date: 2015-06-14
 categories: 
-  - "business"
   - "ted"
+  - "life"
 ---
 
 # The single biggest reason why startups succeed

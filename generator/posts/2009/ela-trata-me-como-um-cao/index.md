@@ -1,10 +1,8 @@
 ---
 date: 2009-12-12
 categories: 
-  - "diversosmiscellanious"
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Ela trata-me como um cão ...

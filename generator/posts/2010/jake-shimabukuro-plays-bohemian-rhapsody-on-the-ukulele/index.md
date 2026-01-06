@@ -1,8 +1,7 @@
 ---
 date: 2010-02-16
 categories: 
-  - "cantigassongs"
-  - "english"
+  - "song"
   - "life"
 ---
 

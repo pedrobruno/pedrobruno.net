@@ -1,9 +1,8 @@
 ---
 date: 2009-01-21
 categories: 
-  - "life"
-tags: 
-  - "life"
+  - "joke"
+  - "pt"
 ---
 
 # Momento Zen

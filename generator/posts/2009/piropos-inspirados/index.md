@@ -1,5 +1,8 @@
 ---
 date: 2009-02-27
+categories:
+  - "joke"
+  - "pt"
 ---
 
 # Piropos Inspirados

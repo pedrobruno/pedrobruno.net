@@ -1,8 +1,7 @@
 ---
 date: 2011-07-18
 categories: 
-  - "english"
-  - "piadajoke"
+  - "joke"
 ---
 
 # Understanding social media: the essential guide

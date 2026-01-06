@@ -1,5 +1,8 @@
 ---
 date: 2025-12-14
+categories: 
+  - "ai"
+  - "feature"
 ---
 
 # The Thinking Game | Full documentary

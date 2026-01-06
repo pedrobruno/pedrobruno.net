@@ -1,10 +1,9 @@
 ---
 date: 2010-10-26
 categories: 
-  - "diversosmiscellanious"
   - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Nostalgia ...

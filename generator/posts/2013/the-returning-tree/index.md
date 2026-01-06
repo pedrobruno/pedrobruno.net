@@ -1,7 +1,7 @@
 ---
 date: 2013-03-10
 categories: 
-  - "life"
+  - "art"
 ---
 
 # The Returning Tree

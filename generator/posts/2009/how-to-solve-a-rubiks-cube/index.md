@@ -1,8 +1,6 @@
 ---
 date: 2009-07-18
 categories: 
-  - "diversosmiscellanious"
-  - "english"
   - "life"
 ---
 

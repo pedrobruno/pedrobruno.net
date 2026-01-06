@@ -1,8 +1,8 @@
 ---
 date: 2011-12-08
 categories: 
-  - "english"
   - "ted"
+  - "tech"
 ---
 
 # Massive-scale online collaboration

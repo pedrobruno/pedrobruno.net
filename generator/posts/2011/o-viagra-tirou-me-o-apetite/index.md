@@ -1,9 +1,8 @@
 ---
 date: 2011-06-08
 categories: 
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # O Viagra tirou-me o apetite

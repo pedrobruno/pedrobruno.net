@@ -1,5 +1,9 @@
 ---
 date: 2021-02-13
+categories: 
+  - "ted"
+  - "lead"
+  - "feature"
 ---
 
 # Most Leaders Don't Even Know the Game They're In

@@ -1,9 +1,7 @@
 ---
 date: 2012-04-06
 categories: 
-  - "english"
   - "life"
-  - "portugues"
   - "ted"
 ---
 

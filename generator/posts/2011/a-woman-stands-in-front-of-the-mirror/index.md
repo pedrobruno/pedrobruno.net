@@ -1,9 +1,7 @@
 ---
 date: 2011-06-07
 categories: 
-  - "english"
-  - "life"
-  - "piadajoke"
+  - "joke"
 ---
 
 # A woman stands in front of the mirror ...

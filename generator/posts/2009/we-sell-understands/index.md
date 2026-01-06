@@ -1,9 +1,8 @@
 ---
 date: 2009-09-09
 categories: 
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # We Sell Understands

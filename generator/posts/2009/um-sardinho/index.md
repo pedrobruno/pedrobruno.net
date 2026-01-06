@@ -1,10 +1,8 @@
 ---
 date: 2009-05-08
 categories: 
-  - "diversosmiscellanious"
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # Um sardinho...

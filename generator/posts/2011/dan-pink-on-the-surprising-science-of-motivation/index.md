@@ -1,9 +1,8 @@
 ---
 date: 2011-09-10
 categories: 
-  - "business"
-  - "english"
   - "ted"
+  - "lead"
 ---
 
 # The puzzle of motivation

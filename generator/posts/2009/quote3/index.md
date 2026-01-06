@@ -1,9 +1,7 @@
 ---
 date: 2009-12-28
 categories: 
-  - "citacoesquotes"
-  - "english"
-  - "life"
+  - "quotes"
 ---
 
 Progress isn't made by early risers. It's made by lazy men trying to find easier ways to do something."

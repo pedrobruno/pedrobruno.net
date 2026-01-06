@@ -1,10 +1,8 @@
 ---
 date: 2009-08-31
 categories: 
-  - "cantigassongs"
-  - "english"
-  - "life"
-  - "piadajoke"
+  - "song"
+  - "joke"
 ---
 
 # Happy Hour!!!

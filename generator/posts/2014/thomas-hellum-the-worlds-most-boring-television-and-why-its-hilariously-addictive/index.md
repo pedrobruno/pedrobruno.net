@@ -1,7 +1,6 @@
 ---
 date: 2014-12-18
 categories: 
-  - "english"
   - "life"
   - "ted"
 ---

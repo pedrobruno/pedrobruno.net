@@ -1,9 +1,8 @@
 ---
 date: 2016-10-30
 categories: 
-  - "business"
-  - "english"
   - "ted"
+  - "life"
 ---
 
 # How the US should use its superpower status

@@ -1,11 +1,9 @@
 ---
 date: 2009-05-04
 categories: 
-  - "cantigassongs"
-  - "diversosmiscellanious"
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "song"
+  - "joke"
+  - "pt"
 ---
 
 # Fado do Estudante

@@ -1,9 +1,8 @@
 ---
 date: 2009-02-25
 categories: 
-  - "diversosmiscellanious"
-  - "life"
-  - "portugues"
+  - "pt"
+  - "joke"  
 ---
 
 # Coisas ...

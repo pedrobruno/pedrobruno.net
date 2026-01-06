@@ -16,7 +16,7 @@
     fetch('content.json')
         .then(response => response.json())
         .then(data => {
-            posts = data;
+            posts = data.posts;
             // If we have fewer than 7 posts total, hide the button immediately
             if (posts.length <= currentIndex) {
                 if (containerDiv) containerDiv.style.display = 'none';

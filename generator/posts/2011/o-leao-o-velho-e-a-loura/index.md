@@ -1,9 +1,8 @@
 ---
 date: 2011-05-18
 categories: 
-  - "life"
-  - "piadajoke"
-  - "portugues"
+  - "joke"
+  - "pt"
 ---
 
 # O leão, o velho e a loura ...

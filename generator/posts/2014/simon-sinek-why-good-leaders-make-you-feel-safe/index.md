@@ -1,8 +1,7 @@
 ---
 date: 2014-05-24
 categories: 
-  - "business"
-  - "life"
+  - "lead"
   - "ted"
 ---
 

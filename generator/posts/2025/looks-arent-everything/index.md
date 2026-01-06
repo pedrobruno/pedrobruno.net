@@ -1,5 +1,7 @@
 ---
 date: 2025-12-06
+categories: 
+  - "life"
 ---
 
 # Looks aren't everything. Believe me, I'm a model.

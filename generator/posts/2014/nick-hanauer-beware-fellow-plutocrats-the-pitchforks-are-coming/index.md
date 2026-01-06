@@ -2,6 +2,7 @@
 date: 2014-08-17
 categories: 
   - "ted"
+  - "life"
 ---
 
 # Beware, fellow plutocrats, the pitchforks are coming

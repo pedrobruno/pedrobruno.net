@@ -1,8 +1,8 @@
 ---
 date: 2018-11-24
 categories: 
-  - "english"
-  - "technical"
+  - "tech"
+  - "ai"
 ---
 
 # The Next Leap: How A.I. will change the 3D industry

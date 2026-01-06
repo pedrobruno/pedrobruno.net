@@ -1,8 +1,7 @@
 ---
 date: 2009-05-19
-categories: 
-  - "business"
-  - "english"
+categories:
+  - "tech"
 ---
 
 # Wolfram.com
