@@ -2,6 +2,7 @@
 date: 2026-01-01
 categories: 
   - "me"
+  - "feature"
 ---
 
 # Welcome to "Insert Coin"

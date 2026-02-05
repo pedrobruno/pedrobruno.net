@@ -1,5 +1,7 @@
-site/index.html
-site/content/
-site/content.json
-site/assets/js/site.min.js
 generator/venv/
+site/assets/css/main.min.css
+site/assets/js/site.min.js
+site/content.json
+site/content.min.json
+site/content/
+site/index.html
